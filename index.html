@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our office</title>
+   
+   
+    <link href="css/style.min.css?1" rel="stylesheet" media="screen" /> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/media.css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(
+        'no-js',
+        'js'
+      );
+      var ua = window.navigator.userAgent.toLowerCase(),
+        isIE = /trident/gi.test(ua) || /msie/gi.test(ua);
+      if (isIE) document.documentElement.classList.add('ie');
+    </script>
+</head>
+<body class="body" onload="media()">
+    <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light navbar--header">
+              <div class="page-header__logo">
+                <a class="navbar-brand navbar-brand--header" href="#">
+                  <img src="img/logo.svg" class="page-header__logo__img" alt="" />
+                </a>
+              </div>
+
+              <div class="page-header__simple-list page-header__simple-list--mobile">
+                <button type="button" class="btn btn-link page-header__simple-btn">
+                  <img src="img/shield-plus.svg" alt="" />
+                  Купить полис
+                </button>
+
+                <button type="button" class="btn btn-link page-header__simple-btn">
+                  <img src="img/headphone.svg" alt="" />
+                  Call-центр
+                </button>
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse navbar-collapse--header"
+                id="navbarNav"
+              >
+                <div class="page-header__info">
+                  <button type="button" class="btn btn-danger page-header__btn-main">
+                    <img src="img/lightning.svg" alt="" />
+                    Сообщить о страховом случае
+                  </button>
+
+                  <div class="page-header__simple-list">
+                    <button type="button" class="btn btn-link page-header__simple-btn">
+                      <img src="img/shield-plus.svg" alt="" />
+                      Купить полис
+                    </button>
+
+                    <button type="button" class="btn btn-link page-header__simple-btn">
+                      <img src="img/headphone.svg" alt="" />
+                      Call-центр
+                    </button>
+                  </div>
+
+                  <a
+                    href="tel:+74959871775"
+                    class="btn btn-light btn-select page-header__phone"
+                  >
+                    <img src="img/phone-grey.svg" class="icon" alt="" />
+                    <span class="font-alter text-nowrap">+7 (495) 987-17-75</span>
+
+                    <select class="bootstrap-select bootstrap-select__promo">
+                      <option value="moscow">
+                        Москва
+                      </option>
+                      <option value="kazan">
+                        Казань
+                      </option>
+                    </select>
+                  </a>
+
+                  <button type="button" class="btn btn-link page-header__language">
+                    ENG
+                  </button>
+                </div>
+
+                <ul class="navbar-nav navbar-nav--header">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                      Услуги <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Помощь туристу</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Помощь по ДМС</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Информация по странам</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Наши офисы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Партнерам</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <section><h1 class="h1 header__h1">Наши <span class="span">офисы</span></h1></section>  
+      </header>
+        
+    <main class="main">
+        <section class="main-container">
+            <section class="main-container__link">
+                <p class="main-container__link-first"><a class="main-container__a" href="#">Главная</a> / <a class="main-container__a  main-container__a_color " href="#">Наши офисы</a></p>
+                <p class="main-container__link-second"><a class="main-container__a main-container__a_color main-container__a_size main-container__a_padding" href="#">Круглосуточный Call-центр поддержки туристов</a></p>
+            </section>
+            <section class="main-container__country-choice">
+                <button class="main-container__button" disabled onclick="disabled_button(),cordRus()">Российская Федерация</button>
+                <button class="main-container__button" onclick="disabled_button(),cordUK()">Украина</button>
+                <button class="main-container__button" onclick="disabled_button(),cordTurk()">Турция</button>
+                <button class="main-container__button" onclick="disabled_button(),cordEgypt()">Египет</button>
+            </section>
+            <section class="main-container__coordinates">
+                <section class="main-container__block-h4">
+                    <h4 class="main-container__h4">Координаты офиса в<span class="span">&nbsp;Москве (Российская Федерация)</span></h4>
+                </section>
+                <section class="main-container__info">
+                    <p class="main-container__p">Круглосуточная телефонная линия в Москве: <span class="main-container__span">+ 7 495 987 17 75;</span></p>
+                    <p class="main-container__p">Факс: <span class="main-container__span">+38 044 2720061;</span></p>
+                    <p class="main-container__p">Так же см. <a class="main-container__a main-container__a_color main-container__a_size" href="#">Круглосуточный Call-центр поддержки туристов</a></p>
+                    <p class="main-container__p">Skype name: <span class="main-container__span">savitar.ops</span></p>
+                    <p class="main-container__p">Оперативный отдел: <span class="main-container__span">svg@savitar-gr.com</span></p>
+                    <p class="main-container__p">Отдел по развитию сети: <span class="main-container__span">network@savitar-gr.com</span></p>
+                    <p class="main-container__p">С 10:00 до 18:00 по будням. Для несрочных запросов о возможностях организации медицинской помощи.</p>
+                    <p class="main-container__p">Адрес: <span class="main-container__span">Москва, 127051, пер. Большой Каретный, д.20/3, 1,2-ой подъезд, 3-й этаж</span> </p>
+                </section>
+                <section class="main-container__map">
+                    <img class="main-container__map-img" src="img/map.png" alt="">
+                </section>
+                <section class="main-container__info-road">
+                    <p class="main-container__p main-container__span">КАК К НАМ ДОБРАТЬСЯ:</p>
+                    <p class="main-container__p main-container__span"> От станции метро "Цветной Бульвар" пешком:</p>
+                    <p class="main-container__p">Первый вагон из центра - из выхода метро поверните сразу налево и идите прямо до здания по адресу Б.Каретный 20</p>
+                    <p class="main-container__p">стр. 3 (трехэтажное здание желтого цвета).</p>
+                    <p class="main-container__p">Подъезд № 1. </p>
+                    <p class="main-container__p">Охраннику на входе нужно сказать, что вы идете в Savitar Group. По лестнице поднимаетесь на 3-й этаж. Вы на месте!</p>
+                    <p class="main-container__p main-container__p_margin-top main-container__span">На машине:</p>
+                    <p class="main-container__p">С ул. Каретный Ряд поворот на Средний Каретный переулок, далее поворот налево на Б.Каретный переулок. </p>
+                    <p class="main-container__p">Внимание: Б.Каретный переулок односторонний от Среднего Каретного переулка к Садовому Кольцу. Вход со двора.</p>
+                    <p class="main-container__p">Для ориентира: проход во двор сразу за магазином «Перекресток». </p>
+                    <p class="main-container__p">Подъезд № 2.</p>
+                    <p class="main-container__p">Охраннику на входе нужно сказать, что вы идете в Savitar Group. По лестнице поднимаетесь на 3-й этаж. Вы на месте!</p>
+                </section>
+            </section>
+        </section>
+    </main>
+    <div class="page__footer-wrapper">
+        <footer class="page-footer" role="contentinfo">
+          <div class="page-footer__inner">
+            <div class="container">
+              <div class="page-footer__nav">
+                <div class="page-footer__nav__block">
+                  <div class="h4 text-danger">О нас</div>
+                  <ul class="page-footer__nav__list">
+                    <li><a href="#">Наши офисы</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Документы</a></li>
+                  </ul>
+                </div>
+                <div class="page-footer__nav__block">
+                  <div class="h4 text-danger">Услуги</div>
+                  <ul class="page-footer__nav__list">
+                    <li>
+                      <a href="#">Организация медицинской репатриации и эвакуации</a>
+                    </li>
+                    <li>
+                      <a href="#">Медицинское сопровождение знаковых мероприятий</a>
+                    </li>
+                    <li><a href="#">Услуги выезжающим за рубеж</a></li>
+                    <li><a href="#">Услуги ДМС</a></li>
+                    <li><a href="#">Организация профосмотров</a></li>
+                    <li><a href="#">Телемедицина</a></li>
+                    <li><a href="#">Оптимизация расходов</a></li>
+                  </ul>
+                </div>
+                <div class="page-footer__nav__block page-footer__nav__block--help">
+                  <div class="h4 text-danger">Помощь</div>
+                  <ul class="page-footer__nav__list">
+                    <li>
+                      <a href="#">Что делать при наступлении страхового случая?</a>
+                    </li>
+                    <li>
+                      <a href="#">Выбор медицинского учреждения в стране пребывания</a>
+                    </li>
+                    <li><a href="#">Связь с сall-центром в мессенджерах</a></li>
+                    <li><a href="#">Компенсация расходов</a></li>
+                    <li><a href="#">Виды услуг в программе ДМС</a></li>
+                    <li><a href="#">Медицинские учреждения по ДМС</a></li>
+                  </ul>
+
+                  <div class="input-group search-mini search-mini--footer">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Введите текст для поиска по сайту"
+                    />
+                    <button class="search-mini__btn">
+                      <img src="img/search.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__main__background">
+              <div class="container">
+                <div class="page-footer__main">
+                  <div class="page-footer__main__logo">
+                    <a class="navbar-brand navbar-brand--footer" href="#">
+                      <img
+                        src="img/logo-white.svg"
+                        class="page-footer__main__logo__img"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+
+                  <div class="page-footer__main__content">
+                    <div
+                      class="page-footer__main__block page-footer__main__block--address"
+                    >
+                      <p class="text-white-50">
+                        Почтовый адрес головного офиса
+                      </p>
+                      <div class="h4 text-white">
+                        Москва, <span class="font-alter">127051</span>, пер. Большой
+                        Каретный, д.<span class="font-alter">20/3</span> (<span
+                          class="font-alter"
+                          >1</span
+                        >,&nbsp;
+                        <span class="text-nowrap"
+                          ><span class="font-alter">2</span>-ой</span
+                        >
+                        подъезд), <span class="font-alter">3</span> этаж
+                      </div>
+                    </div>
+
+                    <div
+                      class="page-footer__main__block page-footer__main__block--contacts"
+                    >
+                      <p class="text-danger text-nowrap">
+                        Круглосуточная телефонная линия
+                      </p>
+                      <a href="#" class="h3 text-white font-alter text-nowrap"
+                        >8 (495) 987–17–75</a
+                      >
+                      <p class="text-white-50">в Москве</p>
+                    </div>
+
+                    <div class="page-footer__main__block">
+                      <div class="page-footer__social">
+                        <p class="text-white-50">Мы в соцсетях</p>
+
+                        <ul class="social social--footer">
+                          <li>
+                            <a href="#">
+                              <img src="img/fb-white.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/vk-white.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/instagram-white.png" alt="" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__info">
+              <div class="container">
+                <div class="page-footer__info__row">
+                  <div class="page-footer__info__block">
+                    <p class="text-white-50">
+                      © Savitar group, <span class="font-alter">2008–2020</span>
+                    </p>
+                  </div>
+                  <div class="page-footer__info__block some page-footer__info__some">
+                    <a href="#" class="text-white-50">Пользовательское соглашение</a>
+                    <a href="#" class="text-white-50">Политика конфиденциальности</a>
+                  </div>
+                  <div class="page-footer__info__block">
+                    <p class="text-white-50">
+                      Разработка сайта <a href="#" class="text-white">RITG</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="scripts/script.min.js?1"></script>
+    <script src="scripts/script.js"></script> 
+    
+</body>
+</html>
